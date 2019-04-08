@@ -1,6 +1,0 @@
-echo "# Moon-Info-for-nintendo-Switch" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin git@github.com:ELY3M/Moon-Info-for-nintendo-Switch.git
-git push -u origin master
