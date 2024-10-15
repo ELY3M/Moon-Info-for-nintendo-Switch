@@ -389,6 +389,9 @@ int main (int argc, char**argv)
 {
 	
 	consoleInit(NULL);
+	padConfigureInput(1, HidNpadStyleSet_NpadStandard);
+	PadState pad;
+	padInitializeDefault(&pad);	
 	
 	double pdatetime;
 	double pphase, mage, dist, sudist;
@@ -481,10 +484,10 @@ int main (int argc, char**argv)
 		
 		
 	
-		hidScanInput();
-		u32 kDown = hidKeysDown(CONTROLLER_P1_AUTO);
+        padUpdate(&pad);
+        u64 kDown = padGetButtonsDown(&pad);
 
-		if (kDown & KEY_PLUS)  { 
+		if (kDown & HidNpadButton_Plus)  { 
 		//exit to hbmenu
 		break; 
 		}
