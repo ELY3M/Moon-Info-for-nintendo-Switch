@@ -8,3 +8,9 @@ very cool :)   I love Moon :)
 
 ELY M. 
 
+Thanks/Credit to:  
+https://github.com/switchbrew for Switch dev stuff
+John Walker http://www.fourmilab.ch/ for Moon codes.  
+
+
+
